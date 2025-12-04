@@ -1,0 +1,345 @@
+:root {
+   /* =========================================
+       1. CORES DA MARCA (Brand Colors)
+       ========================================= */
+   /* Azul UNIFEI Oficial */
+   --brand-blue: #003A70;
+   /* Vermelho UNIFEI Oficial */
+   --brand-red: #DA291C;
+
+   /* =========================================
+       2. VARIAÇÕES MONOCROMÁTICAS (Azul)
+       Para hierarquia visual, botões e fundos
+       ========================================= */
+   --primary-dark: #00284d;
+   /* Azul mais profundo (Hover de botões) */
+   --primary: #003A70;
+   /* Cor Principal */
+   --primary-light: #33618d;
+   /* Azul clareado para destaques */
+   --primary-subtle: #e6ebf1;
+   /* Fundo muito suave (bom para cards/seções) */
+
+   /* =========================================
+       3. VARIAÇÕES MONOCROMÁTICAS (Vermelho)
+       Para alertas, CTAs de urgência e detalhes
+       ========================================= */
+   --accent-dark: #b31b0f;
+   /* Vermelho escuro (Hover) */
+   --accent: #DA291C;
+   /* Cor de Destaque */
+   --accent-light: #e5665d;
+   /* Vermelho suave */
+   --accent-subtle: #fbeae9;
+   /* Fundo avermelhado muito leve */
+
+   /* =========================================
+       4. NEUTROS E TEXTOS (Substituindo o Preto)
+       Tons de cinza-azulado para evitar fadiga visual
+       ========================================= */
+   --text-heading: #121820;
+   /* "Preto" Rico (quase preto, mas com toque de azul) */
+   --text-body: #343a40;
+   /* Cinza chumbo para parágrafos */
+   --text-muted: #6c757d;
+   /* Cinza médio para legendas e datas */
+   --text-light: #ffffff;
+   /* Branco puro para texto sobre fundo escuro */
+
+   /* =========================================
+       5. FUNDOS E SUPERFÍCIES (Backgrounds)
+       ========================================= */
+   --bg-body: #f4f6f9;
+   /* Off-white levemente azulado (Fundo da página) */
+   --bg-surface: #ffffff;
+   /* Branco puro (Fundo de Cards/Abas) */
+   --bg-alt: #e9ecef;
+   /* Cinza claro para alternar seções */
+
+   /* =========================================
+       6. BORDAS E LINHAS
+       ========================================= */
+   --border-color: #dee2e6;
+   /* Cinza claro para linhas divisórias */
+   --border-focus: #003A70;
+   /* Azul da marca para input focus */
+}
+
+* {
+   font-family: 'Montserrat', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap');
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+   font-family: 'Montserrat', sans-serif;
+   font-weight: 700;
+   line-height: 1.2;
+   margin: 0;
+}
+
+h1 {
+   font-size: 2.5em;
+   color: var(--brand-blue);
+   letter-spacing: -1px;
+}
+
+h2 {
+   font-size: 2.5em;
+   color: var(--text-heading);
+}
+
+h3 {
+   font-size: 2em;
+   color: var(--primary);
+}
+
+h4 {
+   font-size: 1.5em;
+   color: var(--text-body);
+}
+
+h5 {
+   font-size: 1.25em;
+   color: var(--text-muted);
+}
+
+p {
+   font-family: 'Montserrat', sans-serif;
+   font-weight: 500;
+   line-height: 1.2;
+   margin: 0;
+   color: var(--text-body);
+}
+
+a {
+   text-decoration: none;
+   color: var(--text-light);
+}
+
+
+html,
+body {
+   overflow-x: hidden;
+}
+
+body {
+   margin: 0 auto;
+}
+
+main {
+   width: 100%;
+}
+
+.content {
+   margin: 0 auto;
+   padding: 5em 0;
+   max-width: 1280px;
+   width: 90%;
+}
+
+.column-50 {
+   width: 51%;
+}
+
+/* BOTÔES */
+
+.btn-primary {
+   background-color: var(--accent);
+   color: var(--text-light);
+   padding: 1em 2em;
+   text-decoration: none;
+   border-radius: 50px;
+}
+
+/* HEADER */
+
+header {
+   background-color: var(--brand-blue);
+}
+
+#header-content {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin: 0 auto;
+   max-width: 1280px;
+   width: 90%;
+   padding: 20px 0;
+}
+
+#logo-img {
+   max-width: 200px !important;
+   height: fit-content;
+}
+
+
+.nav {
+   display: flex;
+   width: 50%;
+   justify-content: space-between;
+   color: var(--text-light);
+   gap: 2em
+}
+
+.nav li{
+   list-style-type: none;
+   color: var(--text-light) !important;
+   text-decoration: none;
+}
+
+/* HERO SECTION */
+
+.hero-buttons {
+   display: flex;
+   margin-top: 3em;
+   gap: 1em;
+}
+
+
+/* =========================================
+   SEÇÃO SOBRE A EQUIPE
+   ========================================= */
+
+/* Espaçamento geral da seção */
+.content-section {
+    padding: 4rem 1.5rem; /* Espaço generoso em cima e embaixo */
+    background-color: var(--bg-body); /* Fundo da página (aquele cinza claro definido no root) */
+}
+
+/* Cabeçalho da Seção */
+.section-header {
+    text-align: center;
+    margin-bottom: 3.5rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-header h2 {
+    color: var(--brand-blue);
+    margin-bottom: 0.5rem;
+}
+
+.section-header .subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.125em; /* 18px */
+    color: var(--text-muted);
+    font-weight: 400;
+}
+
+/* Container dos Cards (Grid Flexível) */
+.team-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem; /* Espaço de 32px entre os cards */
+    flex-wrap: wrap; /* Permite quebrar linha se a tela for pequena */
+}
+
+/* O Cartão Individual */
+.team-card {
+    background-color: #ffffff; /* Fundo branco para destacar do fundo cinza */
+    border-radius: 16px;       /* Bordas bem arredondadas (Amigável) */
+    width: 100%;
+    max-width: 350px;          /* Largura máxima elegante */
+    overflow: hidden;          /* Garante que a imagem não saia das bordas arredondadas */
+    box-shadow: 0 10px 20px rgba(0, 58, 112, 0.05); /* Sombra azulada muito suave */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(0,0,0,0.05); /* Borda ultra sutil */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Efeito ao passar o mouse */
+.team-card:hover {
+    transform: translateY(-5px); /* Sobe um pouquinho */
+    box-shadow: 0 15px 30px rgba(0, 58, 112, 0.15); /* Sombra aumenta */
+}
+
+/* Área da Imagem */
+.img-container {
+    width: 100%;
+    height: 300px; /* Altura fixa para alinhar todos */
+    background-color: var(--bg-alt);
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cobre a área sem esticar o rosto */
+    object-position: center top; /* Foca no rosto */
+}
+
+/* Corpo do Texto do Card */
+.team-card-body {
+    padding: 1.5rem;
+    text-align: left; /* Texto alinhado à esquerda fica mais profissional em cards */
+    flex-grow: 1; /* Faz os corpos terem altura igual */
+}
+
+.team-card-body h4 {
+    color: var(--brand-blue);
+    font-size: 1.5em; /* 24px */
+    margin-bottom: 0.25rem;
+}
+
+.team-card-body .role {
+    display: block;
+    font-size: 0.875em; /* 14px */
+    color: var(--accent); /* Vermelho UNIFEI para o cargo/polo */
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.team-card-body p {
+    font-size: 1em;
+    color: var(--text-body);
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+/* Ajuste para Celular */
+@media (max-width: 768px) {
+    .team-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .team-card {
+        max-width: 100%; /* Ocupa a largura total no celular */
+    }
+}
+
+
+
+@media screen and (max-width:767px) {
+   h1 {
+      font-size: 2.25em;
+   }
+
+   h2 {
+      font-size: 2em;
+   }
+
+   h3 {
+      font-size: 1.75em;
+   }
+
+   h4 {
+      font-size: 1.5em;
+   }
+
+   h5 {
+      font-size: 1.25em;
+   }
+
+   .column-50 {
+      width: 100%;
+   }
+}

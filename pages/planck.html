@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PI4 - Apresentação Relátorios</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div id="header-content">
+            <a href="/">
+                <img src="imgs/logo.webp" alt="" id="logo-img">
+            </a>
+            <ul class="nav nav-pills">
+                <li class="nav-item "><a href="#hero" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#planck" class="nav-link">Dia 1</a></li>
+                <li class="nav-item"><a href="#pendulo" class="nav-link">Dia 2</a></li>
+                <li class="nav-item"><a href="#sobre" class="nav-link">Sobre</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="content">
+            <div class="column-50">
+                <h5>4º Projeto Integrador</h5>
+                <h1>Portfólio de Física Experimental: Pêndulo Simples e Constante de Planck</h1>
+                <h4>Resultados, gráficos e tratamento de erros do 4º Projeto Integrador do Bacharelado em Ciência e Tecnologia.</h4>
+
+                <div class="hero-buttons">
+                    <a href="" class="btn-primary">
+                    Explorar Experimentos
+                </a>
+                <a href="" class="btn-primary">
+                    Baixar Relatórios
+                </a>
+                </div>
+            </div>
+
+            <img src="" alt="">
+        </section>
+
+        <section id="planck" class="content">
+
+            <img src="" alt="">
+
+            <div class="column-50">
+                <h5>Dia 1</h5>
+                <h1>Constante de Planck</h1>
+                <h4>Resultados, gráficos e tratamento de erros do 4º Projeto Integrador do Bacharelado em Ciência e Tecnologia.</h4>
+
+                <div class="hero-buttons">
+                    <a href="" class="btn-primary">
+                    Ver Experimento
+                </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="pendulo" class="content">
+
+            <img src="" alt="">
+
+            <div class="column-50">
+                <h5>Dia 2</h5>
+                <h1>Pendulo Simples</h1>
+                <h4>Resultados, gráficos e tratamento de erros do 4º Projeto Integrador do Bacharelado em Ciência e Tecnologia.</h4>
+
+                <div class="hero-buttons">
+                    <a href="" class="btn-primary">
+                    Ver Experimento
+                </a>
+                </div>
+            </div>
+        </section>
+        
+
+
+    </main>
+
+
+
+    <!-- HERO SECTION -->
+    <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6">
+                <img src="https://images.unsplash.com/photo-1636466497217-26a8cbeaf0aa?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500"
+                    loading="lazy" />
+            </div>
+            <div class="col-lg-6">
+                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+                    Apresentação dos Experimentos
+                </h1>
+                <p class="lead">
+                    Este portfólio digital reúne os resultados práticos e análises teóricas desenvolvidos na disciplina
+                    de Física Experimental.
+                    Navegue pelas abas abaixo para explorar os estudos sobre a aceleração da gravidade (Pêndulo Simples)
+                    e a física quântica (Constante de Planck).</p>
+                </p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                    <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">
+                        Dia 1
+                    </button>
+                    <button type="button" class="btn btn-outline-secondary btn-lg px-4">
+                        Dia 2
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ABAS DIA ! e DIA 2 -->
+
+    <div class="container mt-5">
+
+        <ul class="nav nav-tabs justify-content-center" id="meuPortfolioTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="pendulo-tab" data-bs-toggle="tab" data-bs-target="#pendulo"
+                    type="button" role="tab" aria-selected="true">
+                    Dia 1: Constante de Planck
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="planck-tab" data-bs-toggle="tab" data-bs-target="#planck" type="button"
+                    role="tab" aria-selected="false">
+                    Dia 2: Pêndulo Simples
+                </button>
+            </li>
+        </ul>
+
+        <div class="tab-content p-4 bg-white border border-top-0 rounded-bottom shadow-sm" id="meuPortfolioContent">
+
+            <div class="tab-pane fade" id="pendulo" role="tabpanel" aria-labelledby="planck-tab">
+                <h3 class="text-primary border-bottom pb-2 mb-4">Dia 1: Constante de Planck</h3>
+
+                <div class="container py-3">
+
+                    <section class="mb-5">
+                        <h3 class="text-primary border-bottom pb-2 mb-4">1. Semicondutores: Tipo P e Tipo N</h3>
+                        <div class="row align-items-center">
+                            <div class="col-md-7">
+                                <p><strong>O que é um semicondutor?</strong></p>
+                                <p class="text-muted">
+                                    Semicondutores são materiais (como o silício) que possuem condutividade
+                                    intermediária entre condutores e isolantes. Sua condutividade pode ser alterada
+                                    através da adição de impurezas (dopagem)[cite: 60, 64].
+                                </p>
+
+                                <div class="alert alert-light border-start border-4 border-primary">
+                                    <ul class="list-unstyled mb-0">
+                                        <li class="mb-2">
+                                            <strong>🔴 Tipo N (Negativo):</strong> Semicondutor dopado com impurezas
+                                            <em>doadoras</em>. O portador majoritário de carga é o
+                                            <strong>elétron</strong>[cite: 239, 240].
+                                        </li>
+                                        <li>
+                                            <strong>🔵 Tipo P (Positivo):</strong> Semicondutor dopado com impurezas
+                                            <em>aceitadoras</em>. O portador majoritário é a <strong>lacuna</strong>
+                                            (comportamento positivo)[cite: 241, 242].
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="card bg-light border-0">
+                                    <div class="card-body text-center p-5 border border-2 border-dashed rounded">
+                                        <p class="text-muted fst-italic mb-0">[Imagem: Esquema Tipo P vs Tipo N]</p>
+                                    </div>
+                                    <div class="card-footer bg-transparent border-0 text-center small text-muted">
+                                        Exemplo visual da dopagem
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="mb-5">
+                        <h3 class="text-primary border-bottom pb-2 mb-4">2. Dados Coletados (Tensão x Corrente)</h3>
+                        <div class="card shadow-sm">
+                            <div class="card-header bg-dark text-white">
+                                Valores obtidos experimentalmente
+                            </div>
+                            <div class="card-body p-0">
+                                <div class="table-responsive" style="max-height: 400px; overflow-y: auto;">
+                                    <table class="table table-striped table-hover text-center mb-0">
+                                        <thead class="table-secondary sticky-top">
+                                            <tr>
+                                                <th>Corrente (mA)</th>
+                                                <th>Tensão (V)</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>0</td>
+                                                <td>0,06</td>
+                                            </tr>
+                                            <tr>
+                                                <td>0</td>
+                                                <td>0,22</td>
+                                            </tr>
+                                            <tr>
+                                                <td>0</td>
+                                                <td>0,57</td>
+                                            </tr>
+                                            <tr>
+                                                <td>0</td>
+                                                <td>1,14</td>
+                                            </tr>
+                                            <tr>
+                                                <td>0</td>
+                                                <td>1,45</td>
+                                            </tr>
+                                            <tr>
+                                                <td>0</td>
+                                                <td>2,32</td>
+                                            </tr>
+                                            <tr>
+                                                <td>0,081</td>
+                                                <td>2,47</td>
+                                            </tr>
+                                            <tr>
+                                                <td>1,09</td>
+                                                <td>2,58</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3,45</td>
+                                                <td>2,67</td>
+                                            </tr>
+                                            <tr>
+                                                <td>4,9</td>
+                                                <td>2,71</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5,6</td>
+                                                <td>2,73</td>
+                                            </tr>
+                                            <tr>
+                                                <td>6,6</td>
+                                                <td>2,75</td>
+                                            </tr>
+                                            <tr>
+                                                <td>8,7</td>
+                                                <td>2,8</td>
+                                            </tr>
+                                            <tr>
+                                                <td>11,2</td>
+                                                <td>2,85</td>
+                                            </tr>
+                                            <tr>
+                                                <td>14,43</td>
+                                                <td>2,9</td>
+                                            </tr>
+                                            <tr>
+                                                <td>16,8</td>
+                                                <td>2,94</td>
+                                            </tr>
+                                            <tr>
+                                                <td>18</td>
+                                                <td>2,95</td>
+                                            </tr>
+                                            <tr>
+                                                <td>20,8</td>
+                                                <td>2,99</td>
+                                            </tr>
+                                            <tr>
+                                                <td>29,3</td>
+                                                <td>3,08</td>
+                                            </tr>
+                                            <tr>
+                                                <td>37,1</td>
+                                                <td>3,15</td>
+                                            </tr>
+                                            <tr>
+                                                <td>42,8</td>
+                                                <td>3,21</td>
+                                            </tr>
+                                            <tr>
+                                                <td>52,5</td>
+                                                <td>3,28</td>
+                                            </tr>
+                                            <tr>
+                                                <td>64,3</td>
+                                                <td>3,36</td>
+                                            </tr>
+                                            <tr>
+                                                <td>71</td>
+                                                <td>3,41</td>
+                                            </tr>
+                                            <tr>
+                                                <td>85,9</td>
+                                                <td>3,49</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="mb-5">
+                        <h3 class="text-primary border-bottom pb-2 mb-4">3. Comportamento na Polarização</h3>
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="card h-100 border-secondary">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-secondary">Resistor (Ohmico)</h5>
+                                        <p class="card-text">
+                                            Se invertermos as extremidades do resistor, <strong>não há
+                                                diferença</strong> na corrente. A polaridade não interfere no
+                                            funcionamento de um resistor comum[cite: 247].
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card h-100 border-danger">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-danger">LED (Diodo)</h5>
+                                        <p class="card-text">
+                                            Na <strong>polarização reversa</strong>, não há passagem de corrente. O
+                                            diodo comporta-se como uma chave aberta, pois a camada de depleção se
+                                            alarga, criando uma barreira de potencial alta[cite: 248].
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="mb-5">
+                        <h3 class="text-primary border-bottom pb-2 mb-4">4. Método 1: Determinação da Tensão de Corte
+                        </h3>
+                        <div class="row">
+                            <div class="col-lg-6 mb-3">
+                                <div class="card">
+                                    <div class="card-body text-center bg-light border border-dashed p-5">
+                                        <span class="text-muted fst-italic">
+                                            <img src="/imgs/Grafico dia 1.jpeg" alt="">
+                                        </span>
+                                    </div>
+                                    <div class="card-footer text-center small">Curva Característica do Diodo [cite: 249]
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="card border-0 bg-light h-100">
+                                    <div class="card-body">
+                                        <h5>Cálculos e Resultados</h5>
+                                        <p>A corrente só flui quando $V > V_F$. Utilizando a linearização da reta ($Y =
+                                            ax + b$):</p>
+
+                                        <ul class="list-group list-group-flush mb-3">
+                                            <li class="list-group-item bg-transparent">Coeficiente Angular (a):
+                                                <strong>119 ± 12</strong> [cite: 253]
+                                            </li>
+                                            <li class="list-group-item bg-transparent">Coeficiente Linear (b):
+                                                <strong>-332 ± 39</strong> [cite: 254]
+                                            </li>
+                                        </ul>
+
+                                        <div class="alert alert-primary">
+                                            <strong>Tensão de Corte Encontrada ($V_F$):</strong><br>
+                                            <span class="fs-4">2,80 ± 0,06 V</span> [cite: 261]
+                                        </div>
+                                        <p class="small text-muted mt-2">Observação: Para tensões entre $0 < V < V_F$, a
+                                                corrente é nula devido à barreira de potencial[cite: 250, 251].</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="mb-5">
+                        <h3 class="text-primary border-bottom pb-2 mb-4">5. Método 2: Determinação de Planck (h)</h3>
+                        <p>Através da difração da luz do LED, determinamos o comprimento de onda ($\lambda$) e,
+                            posteriormente, a constante de Planck.</p>
+
+                        <div class="row">
+                            <div class="col-lg-5 mb-3">
+                                <div class="card">
+                                    <div class="card-body text-center bg-light border border-dashed p-5">
+                                        <span class="text-muted fst-italic">[Insira aqui Imagem do Esquema de
+                                            Difração]</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="card border-success h-100">
+                                    <div class="card-header bg-success text-white">Cálculos e Resultados Finais</div>
+                                    <div class="card-body">
+                                        <h6>1. Comprimento de Onda ($\lambda$)</h6>
+                                        <p class="small mb-1">Dados: Distância $D = 65,0$ mm | Posição $x = 15,0$ mm
+                                            [cite: 265, 267]</p>
+                                        <div class="bg-light p-2 mb-3 rounded border">
+                                            <strong>$\lambda = 462 \pm 16$ nm</strong> [cite: 277]
+                                        </div>
+
+                                        <h6>2. Constante de Planck (h)</h6>
+                                        <p class="small mb-1">Fórmula: $h = (q \cdot V_F \cdot \lambda) / c$</p>
+                                        <div
+                                            class="alert alert-success d-flex align-items-center justify-content-between">
+                                            <span>Resultado Final:</span>
+                                            <span class="fs-3 fw-bold">h = (6,8 ± 0,3) x 10⁻³⁴ J.s</span>
+                                        </div>
+                                        <p class="small text-muted text-end mb-0">[cite: 284]</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="mb-5">
+                        <h3 class="text-primary border-bottom pb-2 mb-4">6. Conclusão</h3>
+                        <div class="bg-light p-4 rounded border-start border-4 border-success shadow-sm">
+                            <p class="mb-0 lead fs-6">
+                                O valor experimental encontrado para a constante de Planck ($6,8 \times 10^{-34} J.s$)
+                                aproximou-se satisfatoriamente do valor de referência ($6,26 \times 10^{-34} J.s$)[cite:
+                                285].
+                                O sucesso da prática deve-se à medição precisa, ao controle do ambiente escuro para
+                                visualização dos feixes de luz e ao uso do ajuste linear (software SciDavis) para
+                                minimizar erros estatísticos [cite: 288-290].
+                            </p>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+
+            <div class="tab-pane fade show active" id="planck" role="tabpanel" aria-labelledby="pendulo-tab">
+                <h3 class="text-success border-bottom pb-2 mb-4">Dia 2: Pêndulo Simples</h3>
+
+                <div class="alert alert-warning d-flex align-items-center" role="alert">
+                    <svg class="bi flex-shrink-0 me-2" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+                        <path
+                            d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                    </svg>
+                    <div>
+                        <strong>Condição:</strong> Ângulos $\theta \le 10^\circ$ para garantir $sin(\theta) \approx
+                        \theta$ (Linearidade). [cite: 177]
+                    </div>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <div class="card h-100">
+                            <div class="card-header bg-secondary text-white">
+                                Método 1: Cronômetro (Manual)
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text small">Gráfico linearizado de $T \times \sqrt{l}$.</p>
+
+                                <div class="bg-light border border-2 border-dashed rounded p-3 text-center mb-3">
+                                    <span class="text-muted fst-italic small">
+                                        <img src="/imgs/Grupo/foto1.jpeg" alt="">
+                                    </span>
+                                </div>
+
+                                <ul class="list-unstyled small">
+                                    <li><strong>Equação:</strong> $Y = 2,01x - 0,02$ [cite: 192, 193]</li>
+                                </ul>
+
+                                <div class="p-2 bg-light rounded border-start border-4 border-secondary mt-3">
+                                    <span class="d-block text-muted small">Gravidade (g):</span>
+                                    <h5 class="m-0">9,22 ± 0,59 m/s²</h5> [cite: 200]
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="card h-100 border-success">
+                            <div class="card-header bg-success text-white">
+                                Método 2: Tracker (Software)
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text small">Ajuste senoidal da posição $x \times t$.</p>
+
+                                <div class="bg-light border border-2 border-dashed rounded p-3 text-center mb-3">
+                                    <span class="text-muted fst-italic small">[Inserir Gráfico Tracker]</span>
+                                </div>
+
+                                <ul class="list-unstyled small">
+                                    <li><strong>Frequência ($\omega$):</strong> 5,22 rad/s [cite: 216]</li>
+                                </ul>
+
+                                <div
+                                    class="p-2 bg-success-subtle text-success-emphasis rounded border-start border-4 border-success mt-3">
+                                    <span class="d-block small">Gravidade (g):</span>
+                                    <h5 class="m-0">9,40 ± 0,07 m/s²</h5> [cite: 223]
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-4 p-3 bg-light rounded border-start border-4 border-success">
+                    <h5 class="text-success h6">Conclusão</h5>
+                    <p class="mb-0 small">
+                        O método via <strong>Tracker</strong> foi mais assertivo (mais próximo de 9,78 m/s²) devido à
+                        maior precisão na coleta de dados e menor influência do erro humano. [cite: 226, 227]
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <!-- CARROSSEL DE IMAGENS -->
+        <div id="carrosselFotos" class="carousel slide container my-5" data-bs-ride="carousel">
+            <div class="carousel-inner rounded shadow">
+
+                <div class="carousel-item active">
+                    <img src="imgs/foto1.jpeg" class="d-block w-100" alt="Foto 1">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="Site/imgs/Grupo/foto1.jpeg" class="d-block w-100" alt="Foto 2">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="Site/imgs/Grupo/foto1.jpeg" class="d-block w-100" alt="Foto 3">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="Imgs/foto4.jpeg" class="d-block w-100" alt="Foto 4">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="Imgs/foto5.jpeg" class="d-block w-100" alt="Foto 5">
+                </div>
+
+            </div>
+
+            <!-- Botões de navegação -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carrosselFotos" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carrosselFotos" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+
+            <!-- Indicadores -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carrosselFotos" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#carrosselFotos" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carrosselFotos" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#carrosselFotos" data-bs-slide-to="3"></button>
+                <button type="button" data-bs-target="#carrosselFotos" data-bs-slide-to="4"></button>
+            </div>
+        </div>
+
+
+        <div class="container my-4">
+            <div class="row justify-content-center text-center">
+
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100 border-0 shadow-sm py-3">
+                        <div class="card-body">
+                            <div class="rounded-circle bg-secondary text-white d-flex align-items-center justify-content-center mx-auto mb-3"
+                                style="width: 80px; height: 80px; font-size: 2rem;">
+                                KF
+                            </div>
+                            <h5 class="card-title text-primary">Kennyson Chaves Florencio</h5>
+                            <p class="card-text text-muted small">Aluno BCTec - Polo Itabira</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100 border-0 shadow-sm py-3">
+                        <div class="card-body">
+                            <div class="rounded-circle bg-secondary text-white d-flex align-items-center justify-content-center mx-auto mb-3"
+                                style="width: 80px; height: 80px; font-size: 2rem;">
+                                GO
+                            </div>
+                            <h5 class="card-title text-primary">Gabriel Vitor Oliveira Reis</h5>
+                            <p class="card-text text-muted small">Aluno BCTec - Polo Itabira</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100 border-0 shadow-sm py-3">
+                        <div class="card-body">
+                            <div class="rounded-circle bg-secondary text-white d-flex align-items-center justify-content-center mx-auto mb-3"
+                                style="width: 80px; height: 80px; font-size: 2rem;">
+                                MD
+                            </div>
+                            <h5 class="card-title text-primary">Maxwell de Souza Damasceno</h5>
+                            <p class="card-text text-muted small">Aluno BCTec - Polo Itabira</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
