@@ -90,7 +90,7 @@ h1 {
 
 h2 {
    font-size: 2.5em;
-   color: var(--text-heading);
+   color: var(--brand-blue);
 }
 
 h3 {
@@ -142,8 +142,28 @@ main {
    width: 90%;
 }
 
-.column-50 {
+.column-51 {
    width: 51%;
+}
+
+.column-49 {
+   width: 49%;
+}
+
+.column-41 {
+   width: 41%;
+}
+
+.row {
+   display: flex;
+   justify-content: space-between;
+   gap: 2em;
+}
+
+
+.img-content {
+   width: 100%;
+   border-radius: 20px;
 }
 
 /* BOTÔES */
@@ -154,6 +174,12 @@ main {
    padding: 1em 2em;
    text-decoration: none;
    border-radius: 50px;
+   box-shadow: 0px 10px 10px 0px #00000025;
+   transition: all .5s;
+}
+
+.btn-primary:hover {
+   transform: scale(0.95);
 }
 
 /* HEADER */
@@ -186,10 +212,14 @@ header {
    gap: 2em
 }
 
-.nav li{
+.nav li {
    list-style-type: none;
    color: var(--text-light) !important;
    text-decoration: none;
+}
+
+.nav li a {
+   font-weight: 700;
 }
 
 /* HERO SECTION */
@@ -200,123 +230,176 @@ header {
    gap: 1em;
 }
 
+/* PLANCK SECTION */
 
-/* =========================================
-   SEÇÃO SOBRE A EQUIPE
-   ========================================= */
-
-/* Espaçamento geral da seção */
-.content-section {
-    padding: 4rem 1.5rem; /* Espaço generoso em cima e embaixo */
-    background-color: var(--bg-body); /* Fundo da página (aquele cinza claro definido no root) */
+#planck {
+   background-color: var(--bg-body);
 }
 
-/* Cabeçalho da Seção */
+/* SEÇÃO SOBRE A EQUIPE */
+
+.content-section {
+   padding: 4rem 1.5rem;
+   background-color: var(--bg-alt);
+}
+
 .section-header {
-    text-align: center;
-    margin-bottom: 3.5rem;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+   text-align: center;
+   margin-bottom: 3.5rem;
+   max-width: 800px;
+   margin-left: auto;
+   margin-right: auto;
 }
 
 .section-header h2 {
-    color: var(--brand-blue);
-    margin-bottom: 0.5rem;
+   color: var(--brand-blue);
+   margin-bottom: 0.5rem;
 }
 
 .section-header .subtitle {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.125em; /* 18px */
-    color: var(--text-muted);
-    font-weight: 400;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 1.125em;
+   color: var(--text-muted);
+   font-weight: 400;
 }
 
-/* Container dos Cards (Grid Flexível) */
 .team-grid {
-    display: flex;
-    justify-content: center;
-    gap: 2rem; /* Espaço de 32px entre os cards */
-    flex-wrap: wrap; /* Permite quebrar linha se a tela for pequena */
+   display: flex;
+   justify-content: center;
+   gap: 2rem;
+   flex-wrap: wrap;
 }
 
-/* O Cartão Individual */
 .team-card {
-    background-color: #ffffff; /* Fundo branco para destacar do fundo cinza */
-    border-radius: 16px;       /* Bordas bem arredondadas (Amigável) */
-    width: 100%;
-    max-width: 350px;          /* Largura máxima elegante */
-    overflow: hidden;          /* Garante que a imagem não saia das bordas arredondadas */
-    box-shadow: 0 10px 20px rgba(0, 58, 112, 0.05); /* Sombra azulada muito suave */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 1px solid rgba(0,0,0,0.05); /* Borda ultra sutil */
-    display: flex;
-    flex-direction: column;
+   background-color: #ffffff;
+   border-radius: 16px;
+   width: 100%;
+   max-width: 350px;
+   overflow: hidden;
+   box-shadow: 0 10px 20px rgba(0, 58, 112, 0.05);
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+   border: 1px solid rgba(0, 0, 0, 0.05);
+   display: flex;
+   flex-direction: column;
 }
 
-/* Efeito ao passar o mouse */
 .team-card:hover {
-    transform: translateY(-5px); /* Sobe um pouquinho */
-    box-shadow: 0 15px 30px rgba(0, 58, 112, 0.15); /* Sombra aumenta */
+   transform: translateY(-5px);
+   box-shadow: 0 15px 30px rgba(0, 58, 112, 0.15);
 }
 
-/* Área da Imagem */
 .img-container {
-    width: 100%;
-    height: 300px; /* Altura fixa para alinhar todos */
-    background-color: var(--bg-alt);
+   width: 100%;
+   height: 300px;
+   background-color: var(--bg-alt);
 }
 
 .img-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Cobre a área sem esticar o rosto */
-    object-position: center top; /* Foca no rosto */
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   object-position: center top;
 }
 
-/* Corpo do Texto do Card */
 .team-card-body {
-    padding: 1.5rem;
-    text-align: left; /* Texto alinhado à esquerda fica mais profissional em cards */
-    flex-grow: 1; /* Faz os corpos terem altura igual */
+   padding: 1.5rem;
+   text-align: left;
+   flex-grow: 1;
 }
 
 .team-card-body h4 {
-    color: var(--brand-blue);
-    font-size: 1.5em; /* 24px */
-    margin-bottom: 0.25rem;
+   color: var(--brand-blue);
+   font-size: 1.5em;
+   margin-bottom: 0.25rem;
 }
 
 .team-card-body .role {
-    display: block;
-    font-size: 0.875em; /* 14px */
-    color: var(--accent); /* Vermelho UNIFEI para o cargo/polo */
-    font-weight: 700;
-    margin-bottom: 1rem;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
+   display: block;
+   font-size: 0.875em;
+   color: var(--accent);
+   font-weight: 700;
+   margin-bottom: 1rem;
+   text-transform: uppercase;
+   letter-spacing: 0.5px;
 }
 
 .team-card-body p {
-    font-size: 1em;
-    color: var(--text-body);
-    line-height: 1.6;
-    margin-bottom: 0;
+   font-size: 1em;
+   color: var(--text-body);
+   line-height: 1.6;
+   margin-bottom: 0;
 }
 
-/* Ajuste para Celular */
-@media (max-width: 768px) {
-    .team-grid {
+/* GALERIA */
+
+.swiper {
+        width: 100%;
+        padding-bottom: 50px; /* Espaço para a paginação */
+    }
+
+    .swiper-slide {
+        text-align: center;
+        background: #fff;
+        display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
+    }
+
+    .gallery-img {
+        width: 100%;
+        height: 300px; /* Altura fixa para alinhar */
+        object-fit: cover; /* Corta a imagem para preencher sem esticar */
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    .gallery-caption {
+        margin-top: 15px;
+        font-weight: 600;
+        color: var(--brand-blue); /* Usa sua cor oficial */
+    }
+
+    /* Customização das cores do Swiper para sua marca */
+    :root {
+        --swiper-theme-color: var(--brand-red) !important; /* Bolinhas e Setas Vermelhas */
+        --swiper-navigation-size: 30px;
     }
     
-    .team-card {
-        max-width: 100%; /* Ocupa a largura total no celular */
+    .swiper-button-next, .swiper-button-prev {
+        color: var(--brand-blue); /* Setas em Azul */
     }
+    
+    .swiper-pagination-bullet-active {
+        background-color: var(--accent) !important; /* Bolinha ativa Vermelha */
+    }
+
+
+/*  FOOOTER */
+
+footer {
+   background-color: var(--brand-blue);
 }
 
+#footer-content {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
 
+#direitos-autorais {
+   color: var(--text-light);
+   align-self: center;
+}
+
+#nav-footer {
+   width: auto;
+   margin: 0;
+   padding: 0;
+   gap: 1em;
+   align-items: center;
+   justify-content: flex-end;
+}
 
 @media screen and (max-width:767px) {
    h1 {
@@ -339,7 +422,37 @@ header {
       font-size: 1.25em;
    }
 
-   .column-50 {
+   .column-51, .column-49, .column-41 {
       width: 100%;
    }
+
+   .row {
+      flex-direction: column;
+   }
+
+   .hero-buttons {
+      flex-direction: column;
+      max-width: 250px;
+   }
+
+   #pendulo, #hero {
+      flex-direction: column-reverse;
+   }
+
+   .team-grid {
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .team-card {
+      max-width: 100%;
+   }
+
+   #footer-content {
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center;
+      gap: 2em;
+   }
+
 }

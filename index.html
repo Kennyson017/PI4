@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PI4 - Apresentação Relátorios</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -18,16 +19,17 @@
             </a>
             <ul class="nav">
                 <li class="nav-item "><a href="#hero" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="#planck" class="nav-link">Dia 1</a></li>
-                <li class="nav-item"><a href="#pendulo" class="nav-link">Dia 2</a></li>
+                <li class="nav-item"><a href="/pages/planck.html" class="nav-link">Dia 1</a></li>
+                <li class="nav-item"><a href="/pages/pendulo.html" class="nav-link">Dia 2</a></li>
                 <li class="nav-item"><a href="#sobre" class="nav-link">Sobre</a></li>
+                <li class="nav-item"><a href="#galeria" class="nav-link">Galeria</a></li>
             </ul>
         </div>
     </header>
 
     <main>
-        <section id="hero" class="content">
-            <div class="column-50">
+        <section id="hero" class="content row">
+            <div class="column-51">
                 <h5>4º Projeto Integrador</h5>
                 <h1>Portfólio de Física Experimental: Pêndulo Simples e Constante de Planck</h1>
                 <h4>Resultados, gráficos e tratamento de erros do 4º Projeto Integrador do Bacharelado em Ciência e
@@ -43,32 +45,40 @@
                 </div>
             </div>
 
-            <img src="" alt="">
+            <div class="column-49">
+                    <img src="imgs/planck1.png" alt="" class="img-content">
+                </div>
         </section>
 
-        <section id="planck" class="content">
+        <section id="planck">
 
-            <img src="" alt="">
+            <div class="content row">
 
-            <div class="column-50">
-                <h5>Dia 1</h5>
-                <h2>Constante de Planck</h2>
-                <p>Uma investigação sobre a natureza quântica da luz. Utilizamos semicondutores e redes de difração para
-                    calcular uma das constantes fundamentais da física moderna.</p>
-
-                <div class="hero-buttons">
-                    <a href="" class="btn-primary">
-                        Ver Experimento
-                    </a>
+                <div class="column-49">
+                    <img src="imgs/planck1.png" alt="" class="img-content">
                 </div>
+                
+
+                <div class="column-41">
+                    <h5>Dia 1</h5>
+                    <h2>Constante de Planck</h2>
+                    <p>Uma investigação sobre a natureza quântica da luz. Utilizamos semicondutores e redes de difração
+                        para
+                        calcular uma das constantes fundamentais da física moderna.</p>
+
+                    <div class="hero-buttons">
+                        <a href="" class="btn-primary">
+                            Ver Experimento
+                        </a>
+                    </div>
+                </div>
+
             </div>
         </section>
 
-        <section id="pendulo" class="content">
+        <section id="pendulo" class="content row">
 
-            <img src="" alt="">
-
-            <div class="column-50">
+            <div class="column-41">
                 <h5>Dia 2</h5>
                 <h2>Pendulo Simples</h2>
                 <p>Da mecânica clássica à tecnologia digital. Comparação de precisão entre medições manuais e
@@ -80,56 +90,125 @@
                     </a>
                 </div>
             </div>
+
+            <div class="column-49">
+                    <img src="imgs/pendulo1.png" alt="" class="img-content">
+                </div>
         </section>
 
 
         <section id="sobre" class="content-section">
-    <div class="section-header">
-        <h2>Sobre a equipe</h2>
-        <p class="subtitle">Estudantes do Bacharelado em Ciência e Tecnologia dedicados à pesquisa experimental.</p>
-    </div>
+            <div class="section-header">
+                <h2>Sobre a equipe</h2>
+                <p class="subtitle">Estudantes do Bacharelado em Ciência e Tecnologia dedicados à pesquisa experimental.
+                </p>
+            </div>
 
-    <div class="team-grid">
-        
-        <div class="team-card">
-            <div class="img-container">
-                <img src="/imgs/kennyson.png" width="100%" alt="">
+            <div class="team-grid">
+
+                <div class="team-card">
+                    <div class="img-container">
+                        <img src="/imgs/kennyson.png" width="100%" alt="">
+                    </div>
+                    <div class="team-card-body">
+                        <h4>Kennyson Chaves</h4>
+                        <span class="role">Aluno BCTec - Polo Itabira</span>
+                        <p>Responsável pela coleta de dados experimentais e análise gráfica dos resultados do Pêndulo
+                            Simples.</p>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="img-container">
+                        <img src="/imgs/kennyson.png" width="100%" alt="">
+                    </div>
+                    <div class="team-card-body">
+                        <h4>Gabriel Vitor Oliveira</h4>
+                        <span class="role">Aluno BCTec - Polo Itabira</span>
+                        <p>Encarregado da montagem dos circuitos elétricos e cálculos estatísticos da Constante de
+                            Planck.</p>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="img-container">
+                        <img src="/imgs/kennyson.png" width="100%" alt="">
+                    </div>
+                    <div class="team-card-body">
+                        <h4>Maxwell de Souza</h4>
+                        <span class="role">Aluno BCTec - Polo Itabira</span>
+                        <p>Focado na documentação técnica, revisão metodológica e calibração dos instrumentos via
+                            software.</p>
+                    </div>
+                </div>
+
             </div>
-            <div class="team-card-body">
-                <h4>Kennyson Chaves</h4>
-                <span class="role">Aluno BCTec - Polo Itabira</span>
-                <p>Responsável pela coleta de dados experimentais e análise gráfica dos resultados do Pêndulo Simples.</p>
-            </div>
+        </section>
+
+        <section id="galeria" class="content-section" style="background-color: #fff;">
+    <div class="content">
+        <div class="section-header">
+            <h2>Galeria do Projeto</h2>
+            <p class="subtitle">Registros dos experimentos de Planck e Pêndulo</p>
         </div>
 
-        <div class="team-card">
-            <div class="img-container">
-                <img src="/imgs/kennyson.png" width="100%" alt="">
-            </div>
-            <div class="team-card-body">
-                <h4>Gabriel Vitor Oliveira</h4>
-                <span class="role">Aluno BCTec - Polo Itabira</span>
-                <p>Encarregado da montagem dos circuitos elétricos e cálculos estatísticos da Constante de Planck.</p>
-            </div>
-        </div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                
+                <div class="swiper-slide">
+                    <img src="/imgs/planck1.png" alt="Setup Planck" class="gallery-img">
+                    <!-- <p class="gallery-caption">Montagem do aparato de Planck</p> -->
+                </div>
 
-        <div class="team-card">
-            <div class="img-container">
-                <img src="/imgs/kennyson.png" width="100%" alt="">
-            </div>
-            <div class="team-card-body">
-                <h4>Maxwell de Souza</h4>
-                <span class="role">Aluno BCTec - Polo Itabira</span>
-                <p>Focado na documentação técnica, revisão metodológica e calibração dos instrumentos via software.</p>
-            </div>
-        </div>
+                <div class="swiper-slide">
+                    <img src="/imgs/pendulo1.png" alt="Pêndulo Tracker" class="gallery-img">
+                    <!-- <p class="gallery-caption">Análise de movimento no Tracker</p> -->
+                </div>
 
+                <div class="swiper-slide">
+                    <img src="/imgs/planck1.png" alt="Ajuste Fino" class="gallery-img">
+                    <!-- <p class="gallery-caption">Calibração dos equipamentos</p> -->
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="/imgs/pendulo1.png" alt="Medição Manual" class="gallery-img">
+                    <!-- <p class="gallery-caption">Coleta de dados manual</p> -->
+                </div>
+
+            </div>
+            
+            <div class="swiper-pagination"></div>
+            
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
     </div>
 </section>
 
-
     </main>
 
+    <footer>
+
+        <div class="content" id="footer-content">
+            <p id="direitos-autorais">
+                © 2025 BCTEC - UNIFEI
+            </p>
+            <a href="/">
+                <img src="imgs/logo.webp" alt="" id="logo-img">
+            </a>
+            <ul class="nav" id="nav-footer">
+                <li class="nav-item "><a href="#hero" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#planck" class="nav-link">Dia 1</a></li>
+                <li class="nav-item"><a href="#pendulo" class="nav-link">Dia 2</a></li>
+                <li class="nav-item"><a href="#sobre" class="nav-link">Sobre</a></li>
+                <li class="nav-item"><a href="#galeria" class="nav-link">Galeria</a></li>
+            </ul>
+        </div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/script.js"></script>
 
 </body>
 

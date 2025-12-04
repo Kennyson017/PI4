@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PI4 - Pêndulo Simples</title>
+
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/pages/pendulo.css">
+
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            }
+        };
+    </script>
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div id="header-content">
+            <a href="/index.html">
+                <img src="/imgs/logo.webp" alt="Logo UNIFEI" id="logo-img">
+            </a>
+            <ul class="nav">
+                <li class="nav-item"><a href="/index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="/pages/planck.html" class="nav-link">Dia 1</a></li>
+                <li class="nav-item"><a href="/pages/pendulo.html" class="nav-link active">Dia 2</a></li>
+                <li class="nav-item"><a href="/index.html#sobre" class="nav-link">Sobre</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="content row">
+            <div class="column-51">
+                <h5>Mecânica Clássica</h5>
+                <h1>Pêndulo Simples e Gravidade Local</h1>
+                <h4>Comparação de precisão entre medições manuais e rastreamento computacional (Tracker) para validar o valor da gravidade ($g$).</h4>
+                <div class="authors-wrapper">
+                    <span class="role" style="color: var(--text-muted); display: block; margin-top: 20px;">Autores: Kennyson Chaves, Gabriel Vitor, Maxwell de Souza</span>
+                </div>
+            </div>
+            <div class="column-49">
+                <img src="/imgs/pendulo1.png" alt="Experimento Pêndulo" class="img-content">
+            </div>
+        </section>
+
+        <section class="content-section" style="background-color: var(--bg-body);">
+            <div class="content">
+                <div class="section-header">
+                    <h2>Fundamentação Teórica</h2>
+                    <p class="subtitle">Movimento Harmônico Simples (MHS)</p>
+                </div>
+
+                <div class="row">
+                    <div class="column-49">
+                        <p>O Pêndulo Simples realiza um movimento periódico oscilatório. Para que a equação seja linear e solúvel como MHS, utilizamos a aproximação de <strong>pequenos ângulos</strong> (menores que $10^{\circ}$), onde $sen(\theta) \approx \theta$.</p>
+                    </div>
+                    <div class="column-49">
+                        <div class="formula-box" style="margin-top: 0;">
+                            <p>A relação entre o período ($T$) e o comprimento ($L$) é dada por:</p>
+                            $$T = 2\pi\sqrt{\frac{L}{g}}$$
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content row">
+            <div class="column-41">
+                <span class="subtitle-method">Método 01</span>
+                <h2>Medição Manual</h2>
+                <p>Variamos o comprimento do fio e medimos o período de oscilação com cronômetro. Ao linearizar o gráfico ($T \times \sqrt{L}$), obtivemos uma reta.</p>
+
+                <div class="formula-box">
+                    <p><strong>Parâmetros da Linearização:</strong></p>
+                    $$a = 2,01 \pm 0,06$$
+                    <p>Cálculo da gravidade ($g$):</p>
+                    $$g = \frac{4\pi^2}{a^2} \approx 9,22 \, m/s^2$$
+                </div>
+            </div>
+
+            <div class="column-51">
+                <img src="/imgs/grafico pendulo simples.jpg" alt="Gráfico T x Raiz de L" class="img-content graph-border">
+
+                <details class="details-container">
+                    <summary class="details-summary">Ver Dados Coletados (Tabela)</summary>
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Comprimento (m)</th>
+                                <th>$\sqrt{L}$ ($m^{1/2}$)</th>
+                                <th>Período Médio (s)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>0,475</td><td>0,689</td><td>1,360</td></tr>
+                            <tr><td>0,385</td><td>0,620</td><td>1,233</td></tr>
+                            <tr><td>0,300</td><td>0,547</td><td>1,086</td></tr>
+                            <tr><td>0,210</td><td>0,458</td><td>0,875</td></tr>
+                            <tr><td>0,125</td><td>0,353</td><td>0,699</td></tr>
+                        </tbody>
+                    </table>
+                </details>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="content">
+                <div class="section-header" style="margin-bottom: 3rem;">
+                    <span class="subtitle-method">Método 02</span>
+                    <h2>Análise via Software (Tracker)</h2>
+                    <p class="subtitle">Do vídeo bruto à modelagem matemática</p>
+                </div>
+
+                <div class="row v-center">
+                    <div class="column-41">
+                        <div class="video-card">
+                            <iframe 
+                                src="https://drive.google.com/file/d/1jtuBgsQKx-LxHCjCXhPlA4EAOqzCcCZn/preview" 
+                                allow="autoplay; encrypted-media" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <p class="text-center" style="font-size: 0.85em; margin-top: 15px; color: var(--text-muted);">
+                            Registro original do movimento (Vertical)
+                        </p>
+                    </div>
+
+                    <div class="column-51">
+                        <h3>Rastreamento Frame a Frame</h3>
+                        <p>Utilizamos a visão computacional para rastrear a posição do pêndulo em cada quadro do vídeo ao lado. Isso eliminou o erro de reflexo humano associado ao cronômetro manual.</p>
+                        
+                        <div class="formula-box">
+                            <p>A nuvem de pontos gerou uma curva senoidal perfeita, ajustada pela função:</p>
+                            $$x(t) = A + B \cdot sen(\omega t + \phi)$$
+                        </div>
+
+                        <img src="/imgs/grafico Oscilaçãosimples.jpg" alt="Gráfico Senoidal Tracker" class="img-content graph-border">
+                        
+                        <div style="margin-top: 20px; display: flex; align-items: center; gap: 15px;">
+                            <p style="margin:0; font-weight: bold; color: var(--brand-blue);">Parâmetro obtido:</p>
+                            <div style="background: var(--bg-alt); padding: 10px 20px; border-radius: 50px; font-weight: bold;">
+                                $\omega = 5,22 \pm 0,02 \, rad/s$
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content">
+            <div class="section-header">
+                <h2>Conclusão e Resultados</h2>
+                <p class="subtitle">Comparação entre os métodos e o valor de referência ($9,78 \, m/s^2$)</p>
+            </div>
+
+            <div class="row v-center">
+                <div class="column-51">
+                    <h3>Análise Comparativa</h3>
+                    <p>O <strong>Método Manual</strong> resultou em $g \approx 9,22 \, m/s^2$. Embora próximo, sofreu com a imprecisão humana no acionamento do cronômetro.</p>
+                    <br>
+                    <p>O <strong>Método Tracker</strong> foi significativamente mais assertivo. A análise quadro a quadro eliminou o erro de reflexo humano, resultando em um valor muito mais próximo da gravidade real em Itabira.</p>
+                </div>
+                
+                <div class="column-41">
+                    <div class="result-highlight">
+                        <h3>Melhor Resultado (Tracker)</h3>
+                        <h2 class="result-value">9,40</h2>
+                        <p>$\pm 0,07 \, m/s^2$</p>
+                        <hr class="result-divider">
+                        <p style="color: rgba(255,255,255,0.8); font-size: 0.9em;">Aceleração da Gravidade ($g$)</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="page-navigation">
+                <a href="/pages/planck.html" class="btn-primary btn-prev">← Voltar para Dia 1 (Planck)</a>
+                <a href="/index.html" class="btn-primary">Voltar para Home</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="content" id="footer-content">
+            <p id="direitos-autorais">
+                © 2025 BCTEC - UNIFEI | Relatório Experimental
+            </p>
+            <a href="/index.html">
+                <img src="/imgs/logo.webp" alt="Logo" id="logo-img">
+            </a>
+            <ul class="nav" id="nav-footer">
+                <li class="nav-item"><a href="/index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="/pages/planck.html" class="nav-link">Dia 1</a></li>
+                <li class="nav-item"><a href="/pages/pendulo.html" class="nav-link">Dia 2</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>
